@@ -1,0 +1,29 @@
+/*
+	TODO: Serve + Sirene Code refactoren
+	GPIO Input Pin mit (PORT, PATH)
+*/
+
+
+
+
+/* RFID-Spiel */
+
+RFIDSensor<"rfid", "wartycoon", "1">.
+
+/* TODO: Custom Python HTTP Serve PORT, PATH, handlerPython für das Web-Interface; schreibe ok wenn wechsel */
+
+EventRFIDAjax<"rfid", "http://localhost:1999/read", "ok", "count_ok">.
+BooleanRaiseTime<"siren", "count_ok", "3">.
+
+/* TODO: Sirene anbinden */
+
+
+
+
+
+/* Pilzknopf-Spiel */
+
+/* TODO: 2 GPIO Inputs, wird einer gedrückt, hat der andere gewonnen; Sirene heulen lassen, Spieldarstellung */
+
+
+/* TODO: Fakt, um eine Website im Vollbild + Autostart einzublenden */

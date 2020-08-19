@@ -1,0 +1,4 @@
+.*.sw*
+release.tar.xz
+out
+makeremote
